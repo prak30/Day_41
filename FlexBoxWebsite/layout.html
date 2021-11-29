@@ -1,0 +1,65 @@
+<!doctype html>
+<title>Example</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  background: yellowgreen;
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+</style>
+<body>
+  <header>Header
+      <h1>IRCTC</h1>
+  </header>
+  <div id="main">
+    <article>Article
+        <p>On the occasion of 21st Foundation Day of IRCTC, I extend my warm greetings and best wishes for future to all of you. 
+            Having made a beginning on 27thSept 1999, with a paid up capital of Rs 20 crs, in a short span of 20-21 years, 
+            the Company has grown up to a stage where its Market Capitalisation is more than Rs 20000 Crs. 
+            This is a result of the persistent efforts of all the members of Team IRCTC and able leadership of our predecessors.
+            IRCTC, over a period of time has risen to the challenges arising at different points of time in the form of transfer of Catering to Railways,
+            withdrawal of Service charge and so on and has come out in flying colours every time.
+            It is because of outstanding efforts, hard work and dedication and contribution of each member of our team.
+        </p>
+        <br>
+        <p>IRCTC has successfully completed 21 years of journey and serving to society at large and rail passengers in particular.
+        </p>
+    </article>
+    <nav>
+        <h1><b>Navigation</b></h1>
+        <h2>trains</h2>
+        <h2>buses</h2>
+        <h2>flights</h2>
+        <h2>meals</h2>
+        <h2>stays</h2>
+    </nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
